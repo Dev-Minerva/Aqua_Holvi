@@ -1,0 +1,32 @@
+#pyton program  to create - implement constructor  & destructor
+
+
+class Employee:
+         
+#Parameterized  constructor 
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+
+
+    def show(self):
+        print(self.name, self.age,self.salary)
+
+     #Destructor
+    def __del__(self):
+      print('inside Destructor')
+      print('Object destroyed')
+
+# CREATING THE OBJECT OF EMP CLASS
+Aqua= Employee('Aqua',30,5000)
+Aqua.show()
+
+Maran=Employee('Maran', 55,8500)
+Maran.show()
+
+#delete object
+del Aqua
+
+del Maran
